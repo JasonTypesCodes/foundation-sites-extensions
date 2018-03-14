@@ -1,0 +1,30 @@
+
+@mixin foundation-ext-invalid-form-inputs {
+  label.invalid {
+    color: $invalid-label-text-color;
+  }
+
+  input, textarea {
+    &.invalid {
+      border: $invalid-input-border;
+      background-color: $invalid-input-background-color;
+      box-shadow: $invalid-input-shadow;
+      color: $invalid-input-text-color;
+
+      &:focus {
+        border: $invalid-input-border-focus;
+        background-color: $invalid-input-background-color-focus;
+        box-shadow: $invalid-input-shadow-focus;
+      }
+
+      &::placeholder {
+        color: $invalid-input-placeholder-color;
+      }
+
+      &:disabled,
+      &[readonly] {
+        background-color: $invalid-input-background-disabled;
+      }
+    }
+  }
+}

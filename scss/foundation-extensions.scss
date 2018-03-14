@@ -6,7 +6,9 @@
 @import 'defaults';
 
 @import 'ext/text';
+@import 'ext/forms';
 
 @mixin foundation-extensions-everything {
   @include foundation-ext-text-colors;
+  @include foundation-ext-invalid-form-inputs;
 }
