@@ -1,0 +1,29 @@
+
+@mixin foundation-ext-text-colors {
+  // Add classes to set text color based on values in $foundation-palette
+  // Ex: .text-primary .text-alert etc..
+  @each $key, $color in $foundation-palette {
+    .text-#{$key} {
+      color: $color;
+    }
+  }
+
+  // Additional color classes
+  .text-muted {
+    color: $muted-text;
+  }
+
+  .text-gray {
+    color: $gray-text;
+  }
+
+  .text-black {
+    color: $black;
+  }
+
+  .text-white {
+    color: $white;
+  }
+}
+
+

@@ -1,0 +1,12 @@
+/**
+ * Extensions of Foundation for Sites
+ * Licensed under MIT Open Source
+ */
+
+@import 'defaults';
+
+@import 'ext/text';
+
+@mixin foundation-extensions-everything {
+  @include foundation-ext-text-colors;
+}
