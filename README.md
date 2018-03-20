@@ -7,12 +7,12 @@ These are some extensions for Foundation for Sites that I will likely need to us
 Assuming you are building your Foundation theme from SCSS:
 
 1. Import Foundation
-  `@import 'foundation-sites/scss/foundation';`
+    + `@import 'foundation-sites/scss/foundation';`
 2. Import Foundation Extentions
-  `@import 'foundation-sites-extensions/scss/foundation-extensions';`
+    + `@import 'foundation-sites-extensions/scss/foundation-extensions';`
 3. Override any variables you would like to customize
-  `$white: blue;`
+    + `$white: blue;`
 4. Include the portions you would like in your theme
-  `@include foundation-extensions-everything`
+    + `@include foundation-extensions-everything`
 
 For a list of variables that can be set, see: `scss/_defaults.scss`
