@@ -1,3 +1,6 @@
+## v0.1.0 - Mar 19 2018
+  + No new additions.  Better documentation and demo page.
+
 ## v0.0.2 - Mar 14 2018
   + Adds styling for input and label elements that have an 'invalid' class.
 

@@ -1,6 +1,6 @@
 {
   "name": "foundation-sites-extensions",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Some extensions for Zurb Foundation for Sites that I think are reusable.",
   "main": "index.js",
   "scripts": {
@@ -22,11 +22,9 @@
   "bugs": {
     "url": "https://github.com/VoltiSubito/foundation-sites-extensions/issues"
   },
-  "homepage": "https://github.com/VoltiSubito/foundation-sites-extensions#readme",
+  "homepage": "https://voltisubito.github.io/foundation-sites-extensions/",
   "devDependencies": {
     "foundation-sites": "6.4.3",
-    "node-sass-chokidar": "1.1.0",
-    "npm-run-all": "4.1.2",
-    "shx": "0.2.2"
+    "node-sass-chokidar": "1.1.2"
   }
 }
