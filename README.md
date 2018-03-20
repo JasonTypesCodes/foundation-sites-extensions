@@ -2,6 +2,8 @@
 
 These are some extensions for Foundation for Sites that I will likely need to use in future projects.
 
+## [Demo and Examples](https://voltisubito.github.io/foundation-sites-extensions/)
+
 ## Basic use
 
 Assuming you are building your Foundation theme from SCSS:
