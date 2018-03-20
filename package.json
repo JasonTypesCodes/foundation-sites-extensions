@@ -4,10 +4,7 @@
   "description": "Some extensions for Zurb Foundation for Sites that I think are reusable.",
   "main": "index.js",
   "scripts": {
-    "build-css": "node-sass-chokidar --include-path ./scss --include-path ./node_modules test/ -o example",
-    "build": "npm-run-all -p clean create-struct build-css",
-    "clean": "shx rm -rf ./example",
-    "create-struct": "shx mkdir -p ./example"
+    "build-demo": "node-sass-chokidar --include-path ./scss --include-path ./node_modules test/example.scss -o demo"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Foundation Sites Extensions Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="example.css" />
+
+</head>
+<body>
+  <div class="callout large primary">
+    <h1>Foundation For Sites Extensions</h1>
+    <h2 class="subheader">Demo / Examples / Documentation</h2>
+    <ul class="menu">
+      <li><a href="https://github.com/VoltiSubito/foundation-sites-extensions">GitHub</a></li>
+      <li><a href="https://www.npmjs.com/package/foundation-sites-extensions">NPM</a></li>
+    </ul>
+  </div>
+  <div class="grid-container">
+    <div class="grid-x">
+      <div class="cell small-12">
+        <p>
+          This is a collection of extensions for <a href="https://foundation.zurb.com/sites.html">Foundation for Sites</a> that I thought would be reusable.
+        </p>
+        <p>
+          I've only tested this against Foundation 6.4 on a handful of browsers (IE10, Edge, Chrome, FF).  <a href="https://github.com/VoltiSubito/foundation-sites-extensions">PRs welcome!</a>
+        </p>
+        <p>
+          For a list of variables that can be overriden, see <a href="https://github.com/VoltiSubito/foundation-sites-extensions/blob/main/scss/_defaults.scss">_defaults.scss</a>
+        </p>
+      </div>
+      <div class="cell small-12">
+        <h3>Contents:</h3>
+        <ul class="vertical menu">
+          <li>
+            <a href="#installation"><strong>Installation / Use</strong></a>
+          </li>
+          <li>
+            <a href="#forms"><strong>Forms</strong></a>
+          </li>
+          <li>
+            <a href="#text"><strong>Text</strong></a>
+          </li>
+        </ul>
+        <hr />
+      </div>
+      <div class="cell small-12">
+        <a id="installation"></a>
+        <h2>Installation / Use</h2>
+        <ol>
+          <li>
+            <p>Install from NPM</p>
+            <code>npm install --save foundation-sites-extensions</code>
+          </li>
+          <li>
+            <p>Import into your theme</p>
+            <code class="display-block">
+              // Import Foundation<br />
+              @import 'foundation-sites/scss/foundation';<br />
+              // Import Foundation Extensions<br />
+              @import 'foundation-sites-extensions/scss/foundation-extensions';<br />
+            </code>
+          </li>
+          <li>
+            <p>Override variables</p>
+            <code>$white: blue;</code>
+          </li>
+          <li>
+            <p>Include the portions you would like to use.</p>
+            <p>Alternatively, you can import everything with:</p>
+            <code>@include foundation-extensions-everything;</code>
+          </li>
+        </ol>
+        <hr />
+      </div>
+      <div class="cell small-12">
+        <a id="forms"></a>
+        <h2>Forms</h2>
+      </div>
+      <div class="cell small-12">
+        <a id="forms-invalid"></a>
+        <h3 class="subheader">Invalid Form Elements</h3>
+        <code>
+          @include foundation-ext-invalid-form-inputs;
+        </code>
+      </div>
+      <div class="cell small-12">
+        <p>You can add the <code>invalid</code> class to <code>input</code>, <code>textarea</code>, and <code>label</code> tags:</p>
+        <div class="callout small secondary">
+          <pre>
+&lt;label class="invalid">Invalid Input
+  &lt;input
+    class="invalid"
+    type="text"
+    placeholder="Enter things here"
+    value="something that is not correct"
+  >
+&lt;/label>
+          </pre>
+        </div>
+      </div>
+      <div class="cell small-12">
+          <label class="invalid">Invalid Input
+            <input
+              class="invalid"
+              type="text"
+              placeholder="Enter things here"
+              value="something that is not correct"
+            >
+          </label>
+          <hr />
+      </div>
+    </div>
+    <div class="cell small-12">
+        <a id="text"></a>
+        <h2>Text</h2>
+      </div>
+      <div class="cell small-12">
+        <a id="text-contextual-colors"></a>
+        <h3 class="subheader">Contextual Colors</h3>
+        <code>
+            @include foundation-ext-text-colors;
+        </code>
+      </div>
+      <div class="cell small-12">
+        <p>For any color in your <code>foundation-pallete</code>, (primary, secondary, alert, etc...), you can add the <code>text-color</code> class to a block of text to get that color text.</p>
+        <p>For example:</p>
+        <code>&lt;h5 class="text-primary">I'm Primary!&lt;/h5></code>
+      </div>
+      <div class="cell small-12 padding-top-1">
+        <h5 class="text-primary">I'm Primary!</h>
+        <h5 class="text-secondary">I'm Secondary!</h>
+        <h5 class="text-alert">I'm Alert!</h>
+        <h5 class="text-warning">I'm Warning!</h>
+        <h5 class="text-success">I'm Success!</h>
+      </div>
+      <div class="cell small-12">
+        <p>Additionally, there are classes for <code>text-black</code>, <code>text-white</code>, <code>text-gray</code>, and <code>text-muted</code>.</p>
+      </div>
+      <div class="cell small-12 padding-top-1">
+        <h5 class="text-black">I'm Black!</h>
+        <h5 class="text-white" style="background-color: black">I'm White!</h>
+        <h5 class="text-gray">I'm Gray!</h>
+        <h5 class="text-muted">I'm Muted!</h>
+      </div>
+      <hr />
+  </div>
+</body>
+</html>
