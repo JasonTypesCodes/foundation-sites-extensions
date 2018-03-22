@@ -42,6 +42,9 @@
           <li>
             <a href="#text"><strong>Text</strong></a>
           </li>
+          <li>
+            <a href="#callout"><strong>Callout</strong></a>
+          </li>
         </ul>
         <hr />
       </div>
@@ -145,6 +148,61 @@
         <h5 class="text-muted">I'm Muted!</h>
       </div>
       <hr />
+      <div class="cell small-12">
+        <a id="callout"></a>
+        <h2>Callout</h2>
+      </div>
+      <div class="cell small-12">
+        <a id="callout-titlebar"></a>
+        <h3 class="subheader">Callout Titlebar</h3>
+        <code>
+            @include foundation-ext-callout-titlebar;
+        </code>
+      </div>
+      <div class="cell small-12">
+        <p>Makes it easier to position a <code>title-bar</code> as the top of a callout.</p>
+        <p><strong>Note:</strong> The stylings will only apply when the <code>title-bar</code> is the <strong>first</strong> element in the callout.</p>
+        <p>For example:</p>
+        <div class="callout small secondary">
+          <pre>
+&lt;div class="callout">
+  &lt;div class="title-bar">
+    Normal Callout
+  &lt;/div>
+  &lt;h5>Callout content!&lt;/h5>
+&lt;/div>
+          </pre>
+        </div>
+      </div>
+      <div class="cell small-12 padding-top-1">
+        <div class="callout">
+          <div class="title-bar">
+            Normal Callout
+          </div>
+          <h5>Callout content!</h5>
+        </div>
+        <div class="callout small">
+          <div class="title-bar">
+            Small Callout
+          </div>
+          <h5>Callout content!</h5>
+        </div>
+        <div class="callout large">
+          <div class="title-bar">
+            Large Callout
+          </div>
+          <h5>Callout content!</h5>
+        </div>
+        <div class="callout">
+          <p>Since this title-bar isn't first, the normal styling applies.</p>
+          <div class="title-bar">
+            Normal title-bar
+          </div>
+          <h5>Callout content!</h5>
+        </div>
+      </div>
+      <hr />
+    </div>
   </div>
 </body>
 </html>

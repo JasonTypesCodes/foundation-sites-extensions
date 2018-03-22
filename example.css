@@ -5532,3 +5532,21 @@ input.invalid, textarea.invalid {
     color: #cacaca; }
   input.invalid:disabled, input.invalid[readonly], textarea.invalid:disabled, textarea.invalid[readonly] {
     background-color: #e6e6e6; }
+
+.callout > :first-child.title-bar {
+  margin-left: -1rem;
+  margin-top: -1rem;
+  margin-right: -1rem;
+  margin-bottom: 1rem; }
+
+.callout.large > :first-child.title-bar {
+  margin-left: -3rem;
+  margin-top: -3rem;
+  margin-right: -3rem;
+  margin-bottom: 3rem; }
+
+.callout.small > :first-child.title-bar {
+  margin-left: -0.5rem;
+  margin-top: -0.5rem;
+  margin-right: -0.5rem;
+  margin-bottom: 0.5rem; }
