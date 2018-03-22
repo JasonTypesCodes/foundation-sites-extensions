@@ -1,3 +1,6 @@
+## v0.2.0 - Mar 21 2018
+  + Adds `title-bar` alignment for callouts.
+
 ## v0.1.0 - Mar 19 2018
   + No new additions.  Better documentation and demo page.
 
