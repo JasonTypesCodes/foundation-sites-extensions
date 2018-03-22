@@ -1,0 +1,29 @@
+
+@mixin callout-titlebar-adjust($padding) {
+  $margin-offset: $padding * -1;
+
+  > :first-child {
+    &.title-bar {
+      margin: {
+        left: $margin-offset;
+        top: $margin-offset;
+        right: $margin-offset;
+        bottom: $padding;
+      }
+    }
+  }
+}
+
+@mixin foundation-ext-callout-titlebar {
+  .callout {
+    @include callout-titlebar-adjust($callout-padding);
+
+    &.large {
+      @include callout-titlebar-adjust($callout-padding-large);
+    }
+
+    &.small {
+      @include callout-titlebar-adjust($callout-padding-small);
+    }
+  }
+}

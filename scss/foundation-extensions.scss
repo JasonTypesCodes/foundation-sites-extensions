@@ -7,8 +7,10 @@
 
 @import 'ext/text';
 @import 'ext/forms';
+@import 'ext/callout';
 
 @mixin foundation-extensions-everything {
   @include foundation-ext-text-colors;
   @include foundation-ext-invalid-form-inputs;
+  @include foundation-ext-callout-titlebar;
 }
