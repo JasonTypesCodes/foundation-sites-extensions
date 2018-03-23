@@ -25,6 +25,6 @@
   "homepage": "https://voltisubito.github.io/foundation-sites-extensions/",
   "devDependencies": {
     "foundation-sites": "6.4.3",
-    "node-sass-chokidar": "1.1.2"
+    "node-sass-chokidar": "1.2.0"
   }
 }
