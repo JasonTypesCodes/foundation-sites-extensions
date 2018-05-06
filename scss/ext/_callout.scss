@@ -5,10 +5,10 @@
   > :first-child {
     &.title-bar {
       margin: {
-        left: $margin-offset;
-        top: $margin-offset;
-        right: $margin-offset;
         bottom: $padding;
+        left: $margin-offset;
+        right: $margin-offset;
+        top: $margin-offset;
       }
     }
   }

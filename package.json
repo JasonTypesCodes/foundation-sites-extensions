@@ -4,7 +4,8 @@
   "description": "Some extensions for Zurb Foundation for Sites that I think are reusable.",
   "main": "index.js",
   "scripts": {
-    "build-demo": "node-sass-chokidar --include-path ./scss --include-path ./node_modules test/example.scss -o demo"
+    "build-demo": "node-sass-chokidar --include-path ./scss --include-path ./node_modules test/example.scss -o demo",
+    "lint": "sass-lint -c ./.sass-lint.yml -v"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "homepage": "https://voltisubito.github.io/foundation-sites-extensions/",
   "devDependencies": {
     "foundation-sites": "6.4.3",
-    "node-sass-chokidar": "1.2.0"
+    "node-sass-chokidar": "1.2.2",
+    "sass-lint": "1.12.1"
   }
 }

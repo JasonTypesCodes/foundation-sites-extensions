@@ -1,0 +1,6 @@
+files:
+  include:
+    - ./scss/*.scss
+    - ./scss/**/*.scss
+rules:
+  no-css-comments: 0
