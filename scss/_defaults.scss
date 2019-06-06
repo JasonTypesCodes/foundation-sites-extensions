@@ -21,6 +21,11 @@ $invalid-input-placeholder-color: $input-placeholder-color !default;
 
 $invalid-input-background-disabled: $input-background-disabled !default;
 
-//Small and large callout paddings are currently hardcoded in Foundation 6.4.3
-$callout-padding-small: .5rem !default;
-$callout-padding-large: 3rem !default;
+// Small and large callout paddings are hard-coded in Foundation 6.5.3
+// This map can be removed when this is released:
+// https://github.com/zurb/foundation-sites/commit/6baec0afed5a00459e8c2b809d59a181536eaabd
+$callout-sizes: (
+  small: .5rem,
+  default: 1rem,
+  large: 3rem,
+) !default;

@@ -16,14 +16,12 @@
 
 @mixin foundation-ext-callout-titlebar {
   .callout {
-    @include callout-titlebar-adjust($callout-padding);
+    @include callout-titlebar-adjust(map-get($callout-sizes, default));
 
-    &.large {
-      @include callout-titlebar-adjust($callout-padding-large);
-    }
-
-    &.small {
-      @include callout-titlebar-adjust($callout-padding-small);
+    @each $size, $padding in map-remove($callout-sizes, default) {
+      &.#{$size} {
+        @include callout-titlebar-adjust($padding);
+      }
     }
   }
 }

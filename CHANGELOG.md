@@ -1,3 +1,7 @@
+## v0.3.0 - Jun 05 2019
+  + Updates Foundation Sites to 6.5.3
+  + Changes definition of callout sizes to a map to match (eventual) up-stream implementation.
+
 ## v0.2.0 - Mar 21 2018
   + Adds `title-bar` alignment for callouts.
 
