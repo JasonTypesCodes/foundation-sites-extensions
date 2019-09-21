@@ -1,6 +1,6 @@
 {
   "name": "foundation-sites-extensions",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Some extensions for Zurb Foundation for Sites that I think are reusable.",
   "main": "index.js",
   "scripts": {
