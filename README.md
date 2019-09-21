@@ -2,7 +2,7 @@
 
 These are some extensions for Foundation for Sites that I will likely need to use in future projects.
 
-## [Demo and Examples](https://voltisubito.github.io/foundation-sites-extensions/)
+## [Demo and Examples](https://jasontypescodes.github.io/foundation-sites-extensions/)
 
 ## Basic use
 
